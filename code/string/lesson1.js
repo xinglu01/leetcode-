@@ -2,6 +2,16 @@
 // eg: hello world => olleh dlrow
 // 解题思路: 首先将每个单词转为数组 在数组内部进行反转 在转为字符串并且保留空格
 
+// export default (str) => {
+//   // 字符串按空格进行分隔，保存数组，数组的元素的先后顺序就是单词的顺序
+//   let arr = str.split(' ')
+//   // 对数组进行遍历，然后每个元素进行反转
+//   let result = arr.map(item => {
+//     return item.split('').reverse().join('')
+//   })
+//   return result.join(' ')
+// }
+
 export default (str) => {
   // 1、将字符串按照空格分割成数组
   // 2、将数组中每个单词反转
